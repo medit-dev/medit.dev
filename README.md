@@ -1,2 +1,2 @@
-# MedItDev.github.io
+# MedItDev
 Home Page
