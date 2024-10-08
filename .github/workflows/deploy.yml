@@ -34,7 +34,7 @@ jobs:
       - name: Build with VitePress
         run: |
           pnpm run build
-          touch .vitepress/dist/.nojekyll
+          touch docs/.vitepress/dist/.nojekyll
         env:
           NODE_ENV: production
 
