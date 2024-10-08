@@ -120,8 +120,8 @@ dist
 .pnp.*
 
 # vitepress
-src/docs/.vitepress/dist
-src/docs/.vitepress/cache
+docs/.vitepress/dist
+docs/.vitepress/cache
 lib
 
 */.output

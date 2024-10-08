@@ -38,6 +38,14 @@ jobs:
         env:
           NODE_ENV: production
 
+      - name: Copy CNAME file
+        run: |
+          if [ -f CNAME ]; then
+            cp CNAME docs/.vitepress/dist/
+          else
+            echo "CNAME file not found in root directory"
+          fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
