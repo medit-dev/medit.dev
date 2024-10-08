@@ -26,7 +26,7 @@ jobs:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
 
       - name: Setup Node
-        uses: ./.github/actions/action
+        uses: ./actions/action
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
