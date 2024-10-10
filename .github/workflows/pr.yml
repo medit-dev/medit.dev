@@ -17,4 +17,4 @@ jobs:
           fetch-depth: 0 # Not needed if lastUpdated is not enabled
 
       - name: Snyk Scan
-        uses: ./.github/snyk-scan
+        uses: ./.github/actions/snyk-scan
