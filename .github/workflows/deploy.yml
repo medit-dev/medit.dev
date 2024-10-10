@@ -44,14 +44,6 @@ jobs:
           sarif_file: snyk-open-source.sarif
           category: "Snyk Open Source"
 
-      - name: Monitor production vulnerabilities
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          command: monitor
-          args: --fail-fast  --remote-repo-url=${{ github.repository }} --project-name=medit-dev/medit.dev
-
 #      - name: Check for code vulnerabilities
 #        id: snyk_code
 #        uses: snyk/actions/node@master
