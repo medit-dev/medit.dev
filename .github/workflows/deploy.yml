@@ -36,7 +36,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: test
-          args: --all-projects --dev --sarif-file-output=snyk-open-source.sarif
+          args: --all-projects --dev --remote-repo-url=https://github.com/medit-dev/medit.dev.git --sarif-file-output=snyk-open-source.sarif
 
       - name: Upload open source vulnerabilities to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v3
@@ -50,7 +50,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
-          args: --fail-fast --all-projects --dev --project-name=${{github.repository}}
+          args: --fail-fast --dev --all-projects --remote-repo-url=https://github.com/medit-dev/medit.dev.git
 
       #      - name: Check for code vulnerabilities
 #        id: snyk_code
