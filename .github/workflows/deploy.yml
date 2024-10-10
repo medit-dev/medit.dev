@@ -66,7 +66,7 @@ jobs:
           args: --all-projects --sarif-file-output=snyk-open-source.sarif
       - name: Upload open source vulnerabilities to GitHub Code Scanning
 
-        uses: github/codeql-action/upload-sarif@master
+        uses: github/codeql-action/upload-sarif@v3
         if: always()
         with:
           sarif_file: snyk-open-source.sarif
