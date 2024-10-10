@@ -50,7 +50,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
-          args: --all-projects --fail-fast --project-name=${{ github.repository }}
+          args: --all-projects --fail-fast
 
 #      - name: Check for code vulnerabilities
 #        id: snyk_code
