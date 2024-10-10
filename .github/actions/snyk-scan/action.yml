@@ -7,8 +7,6 @@ on:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v3
-
     - name: Check for open source vulnerabilities
       id: snyk_open_source
       uses: snyk/actions/node@master
