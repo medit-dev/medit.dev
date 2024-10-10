@@ -29,6 +29,22 @@ jobs:
       - name: Setup Node
         uses: ./.github/actions
 
+      - name: Check for open source vulnerabilities
+        id: snyk_open_source
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          command: test
+          args: --all-projects --sarif-file-output=snyk-open-source.sarif
+
+      - name: Upload open source vulnerabilities to GitHub Code Scanning
+        uses: github/codeql-action/upload-sarif@v3
+        if: always()
+        with:
+          sarif_file: snyk-open-source.sarif
+          category: "Snyk Open Source"
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
@@ -52,26 +68,7 @@ jobs:
         with:
           path: docs/.vitepress/dist
 
-  security:
-    needs: build
-    runs-on: ubuntu-latest
-    name: security
-    steps:
-      - name: Check for open source vulnerabilities
-        id: snyk_open_source
-        uses: snyk/actions/node@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          command: test
-          args: --sarif-file-output=snyk-open-source.sarif
 
-      - name: Upload open source vulnerabilities to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v3
-        if: always()
-        with:
-          sarif_file: snyk-open-source.sarif
-          category: "Snyk Open Source"
 
           #      - name: Check for code vulnerabilities
           #        id: snyk_code
