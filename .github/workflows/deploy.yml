@@ -50,7 +50,7 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
           command: monitor
-          args: --fail-fast --project-name=${{ github.repository }}
+          args: --fail-fast  --remote-repo-url=${{ github.repository }} --project-name=medit-dev/medit.dev
 
 #      - name: Check for code vulnerabilities
 #        id: snyk_code
