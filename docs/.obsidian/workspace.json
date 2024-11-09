@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Domain Driven Design/Domain Driven Design.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Domain Driven Design"
+              "title": "index"
             }
           }
         ]
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Domain Driven Design/Domain Driven Design.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Domain Driven Design"
+              "title": "Backlinks for index"
             }
           },
           {
@@ -122,12 +122,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Domain Driven Design/Domain Driven Design.md",
+                "file": "index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Domain Driven Design"
+              "title": "Outgoing links from index"
             }
           },
           {
@@ -149,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Domain Driven Design/Domain Driven Design.md"
+                "file": "index.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Domain Driven Design"
+              "title": "Outline of index"
             }
           }
         ]
@@ -167,7 +167,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Domain Driven Design/Domain Driven Design.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -180,7 +180,7 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": false,
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 1,
@@ -195,7 +195,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of Domain Driven Design"
+              "title": "Graph of index"
             }
           }
         ]
@@ -214,16 +214,18 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "darlal-switcher-plus:Open in Headings Mode": false,
-      "darlal-switcher-plus:Open Symbols for the active editor": false
+      "darlal-switcher-plus:Open Symbols for the active editor": false,
+      "markdown-importer:Open format converter": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "fca3b273ef026bb7",
   "lastOpenFiles": [
-    "index.md",
     "Domain Driven Design/Command and Query Responsibility Segregation.md",
+    "index.md",
     "Domain Driven Design/Domain Driven Design.md",
-    "Domain Driven Design/Untitled",
     "Domain Driven Design",
+    "Domain Driven Design/Untitled",
     "Welcome.md",
     "create a link.md"
   ]

@@ -11,7 +11,7 @@ const config: UserConfig<DefaultTheme.Config> = {
       { text: 'Strona Główna', link: '/' },
     ],
     footer: {
-      copyright: 'Copyright © Andrzej Konarski and contributors.',
+      copyright: 'Copyright © Andrzej Konarski',
     },
     search: {
       provider: 'local',
