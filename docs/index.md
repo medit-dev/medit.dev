@@ -4,7 +4,7 @@
 Jestem pasjonatem technologii, który łączy głęboką wiedzę techniczną z umiejętnością budowania efektywnych zespołów. Choć lubię 🏊‍♂️ nurkować i 🎣 łowić ryby, do projektowania oprogramowania podchodzę ze stoickim spokojem.
 
 ## 🛠 Kluczowe umiejętności
-- 🏗 Domain-Driven Design (DDD) & CQRS
+- 🏗 [[Domain Driven Design]] & [[Command and Query Responsibility Segregation]]
 - 🧠 Event Storming
 - 🌐 Architektura mikroserwisów
 - 🔄 Team Topologies
