@@ -44,7 +44,7 @@ Nurkowanie, wędkarstwo, motoryzacja i... niedawno zostałem tatą! 👨‍👩�
 ## 📞 Kontakt
 Zapraszam do kontaktu! Zawsze chętnie porozmawiam o nowych wyzwaniach i możliwościach współpracy.
 
-📧 andrzej.konarski@medit.dev | 📱 +48 604 504 253 | 🌐 www.medit.dev
+📧 andrzej.konarski@medit.dev | 📱 +48 604 504 253 | 🌐 [Homepage](https://medit.dev)
 
 ---
 
