@@ -39,7 +39,7 @@ jobs:
           args: --all-projects --dev --remote-repo-url=https://github.com/${{ github.repository }}.git --sarif-file-output=snyk-open-source.sarif
 
       - name: Upload open source vulnerabilities to GitHub Code Scanning
-        uses: github/codeql-action/upload-sarif@v3
+        uses: github/codeql-action/upload-sarif@v4
         with:
           sarif_file: snyk-open-source.sarif
           category: "Snyk Open Source"
